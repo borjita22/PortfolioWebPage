@@ -1,0 +1,622 @@
+main h1
+{
+    margin-top: 50px;
+}
+
+
+
+.sectionTitle
+{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contentTitle
+{
+    margin-left: 50px;
+    text-decoration: underline;
+    font-size: 250%;
+}
+
+#game-skills-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-slot
+{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    padding: 20px 10px 10px 10px;
+    transition: transform 0.5s ease;
+    margin: 20px;
+}
+.skill-slot:hover
+{
+    transform: scale(120%);
+    background: rgb(0, 0, 0);
+    z-index: 6;
+}
+
+.skill-slot h2
+{
+    color: lightgray;
+}
+
+
+.skill-slot-list li
+{
+    margin-top: 10px;
+    text-align: left;
+    color: lightgray;
+}
+
+#game-engines
+{
+    width: 100%;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+
+
+#engines-container
+{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.engine-slot
+{
+    width: 25%;
+    height: 400px;
+    background: white;
+    background-color: red;
+    border-radius: 10px;
+    position: relative;
+    margin: 25px;
+    overflow: hidden;
+    
+    display: inline-block;
+    vertical-align: top;
+}
+
+.unity
+{
+    background-image: url("../Resources/Imgs/unityLogo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.unreal
+{
+    background-image: url("../Resources/Imgs/unrealLogo.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.text
+{
+    
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: height 0.5s ease;
+}
+
+.text h3
+{
+    color: white;
+}
+
+.text:hover
+{
+    background-color: whitesmoke;
+    height: 175px;
+    transition: 0.5s;
+}
+
+.text:hover h3
+{
+    color: black;
+}
+
+.button
+{
+    border: 2px solid lightblue;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 160px;
+}
+
+#game-projects
+{
+    position: relative; /* Asegura que los botones estén dentro de esta sección */
+    width: 100%;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+#projects-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row; /* Asegura que los proyectos se alineen en una fila */
+    transition: transform 0.5s ease;
+}
+
+.project-slot {
+    flex: 0 0 100%; /* Cada proyecto ocupa el 100% del contenedor */
+    overflow: hidden;
+    box-sizing: border-box;
+    background: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0;
+}
+
+.project-slot h3
+{
+    font-size: 300%;
+    margin: 0;
+}
+
+#prevBtn, #nextBtn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#prevBtn img, #nextBtn img
+{
+    color: white;
+    width: 50px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+#prevBtn {
+    left: 20px;
+    
+}
+
+#nextBtn {
+    right: 20px;
+    
+}
+
+
+#prevBtn img:hover
+{
+    transform: scale(1.25);
+}
+
+#nextBtn img:hover
+{
+    transform: scale(1.25);
+}
+
+#web-projects
+{
+    box-sizing: content-box;
+    margin-bottom: 5%;
+}
+
+#web-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+#web-knowledge-container
+{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    box-sizing: content-box;
+}
+
+.knowledge-slot
+{
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    --bg-image: url('../Resources/Imgs/earth.jpeg');
+    --bg-color : black;
+    /*transition: background-image 0.5s ease;*/
+    transition: background-color 0.5s ease-in-outs;
+}
+
+.knowledge-slot button
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkcyan;
+}
+
+.knowledge-slot::before
+{
+    content: ""; /* Necesario para que el pseudo-elemento sea visible */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-image: var(--bg-image);*/
+    background-color: var(--bg-color);
+    background-position: center;
+    background-size: cover;
+    opacity: 0; /* Imagen nueva empieza invisible */
+    transition: opacity 1s ease; /* Transición suave para la opacidad */
+    
+}
+
+.knowledge-slot:hover::before
+{
+    opacity: 0.5;
+}
+
+.knowledge-slot img
+{
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+    position: relative;
+    margin-top: 50px;
+    
+}
+
+
+
+.knowledge-slot:hover img
+{
+    transform: scale(200%) translateY(45%);
+}
+
+.knowledge-info
+{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    opacity: 0;
+
+    transition: all 0.5s ease;
+
+    padding: 25px;
+    box-shadow: rgba(255, 255, 255, 0.45) 10px 10px 10px -10px, rgba(255, 255, 255, 0.5) 10px 10px 10px -10px;
+    border-radius: 10%;
+    
+}
+
+.knowledge-slot:hover .knowledge-info
+{
+    opacity: 1;
+    top: 50px;
+}
+
+.knowledge-info button
+{
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-style: normal;
+    cursor: pointer;
+
+    transition: all 0.25s ease-in;
+}
+
+.knowledge-info button:hover
+{
+    color: #ff5941;
+    text-decoration: underline;
+    transform: scale(1.25);
+}
+
+#web-projects
+{
+    clear: both;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+}
+
+#web-projects p
+{
+    margin-left: 30px;
+}
+
+#web-projects-container
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.web-project-slot
+{
+    width: 25%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    
+}
+
+.web-project-slot:hover
+{
+    background-color: whitesmoke;
+}
+
+
+.web-project-slot h2
+{
+    transform: translateY(100px);
+    font-size: 40px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.web-project-slot .acquired-skills
+{
+    margin-right: 35%;
+    margin-bottom: 50px;
+}
+
+.web-project-slot button
+{
+    max-width: 30%;
+    margin-left: 30%;
+    margin-bottom: 2%;
+    background: none;
+    border: none;
+    font-size: 20px;
+    transition: all 0.5s ease;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.web-project-slot button:hover
+{
+    text-decoration: underline;
+    transform: scale(1.5);
+
+}
+
+.web-project-slot:hover h2
+{
+    transform: translateY(0);
+    font-size: 30px;
+}
+
+.acquired-skills 
+{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(100px);
+    margin-left: 10%;
+}
+
+
+.web-project-selector
+{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(100px);
+}
+
+.web-project-slot:hover .acquired-skills
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.web-project-slot:hover .web-project-selector
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+.skills-list
+{
+    list-style-type: upper-latin;
+    justify-content: center;
+    
+}
+
+
+ 
+#next-framework-arrow
+{
+    display: none;
+}
+
+
+
+@media (min-width: 1024px) {
+    #engines-container {
+        position: relative;
+        
+    }
+}
+
+
+@media (max-width: 600px)
+{
+    .contentTitle
+    {
+        margin: 0;
+    }
+    #game-skills
+    {
+        text-align: center;
+    }
+    #game-skills h1
+    {
+        margin: 0;
+    }
+    #game-skills-container
+    {
+        flex-direction: column;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    #game-engines
+    {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #game-engines h1
+    {
+        margin: 0;
+    }
+
+    #engines-container
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    .skill-slot
+    {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .engine-slot
+    {
+        width: 80%;
+        
+    }
+
+    #game-projects
+    {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #game-projects h1
+    {
+        margin: 0;
+    }
+
+    #projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;  /* Asegura que el ancho se ajuste al 100% */
+        box-sizing: border-box;
+        height: auto; 
+    }
+    
+    .project-slot {
+        width: 80%;
+        min-height: 350px; /* Asegura que cada slot tenga un tamaño mínimo visible */
+        margin: 20px 0;
+        box-sizing: border-box;
+        display: flex; /* Para alinear el contenido dentro del slot */
+        flex-direction: column;
+        justify-content: center; /* Centra el contenido verticalmente */
+        align-items: center;
+    }
+    #prevBtn, #nextBtn
+    {
+        display: none;
+    }
+
+    #web-container
+    {
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+
+    #web-knowledge-container
+    {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .knowledge-slot
+    {
+        width: 100%;
+    }
+
+    #web-projects-container
+    {
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .web-project-slot
+    {
+        width: 100%;
+    }
+
+    #web-projects p
+    {
+        margin: 0;
+    }
+
+    #next-framework-arrow
+    {
+        display: block;
+        position: relative;
+        width: 50px;
+        height: auto;
+        color: white;
+        position: absolute;
+        margin-top: 50%;
+        margin-left: 85%;
+        z-index: 2;
+        opacity: 50%;
+    }
+}

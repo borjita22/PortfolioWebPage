@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BorchDev - Games</title>
+
+    <link rel="stylesheet" href="../CSS/generalStyle.css">
+
+    <link rel="stylesheet" href="../CSS/games.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div id="header-container">
+            <a href="../index.html"><img src="../Resources/Imgs/borchDevLogo.svg" id="main-logo"></a>
+            <a href="../index.html"><img src="../Resources/Imgs/borchResponsiveLogo.svg" id="main-logo-small" style="width: 130px; height: auto;"></a>
+            <div id="header-navbar">
+                <nav>
+                    <ul id="nav-links">
+                        <li><a href="about.html" class="nav-item" data-bgcolor="#ffee99">About</a></li>
+                        <li><a href="#" id="active" class="nav-item" data-bgcolor="#ff5941">My Work</a></li>
+                        <li><a href="contact.php" class="nav-item" data-bgcolor="#3cb371">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" onclick="toggleMenu()"></div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="about.html">About</a>
+            <a href="#" id="active">My Work</a>
+            <a href="contact.php">Contact</a>
+        </div>
+
+    </header>
+
+    <main>
+
+        <h1 class="sectionTitle">VIDEOGAMES</h1>
+
+        <div>
+            <div id="game-skills" class="sectionContainer">
+            
+                <h2 class="contentTitle">My skills</h1>
+                <div id="game-skills-container">
+                    <div class="skill-slot">
+                        <h2>Design</h2>
+                        <ul class="skill-slot-list">
+                            <li>Prototyping</li>
+                            <li>Game design</li>
+                            <li>Systems design</li>
+                            <li>UI/UX design</li>
+                        </ul>
+                    </div>
+        
+                    <div class="skill-slot">
+                        <h2>Programming</h2>
+                        <ul class="skill-slot-list">
+                            <li>Architecture patterns design</li>
+                            <li>Object oriented programming: <span style="font-size: 120%;">SOLID</span> principles</li>
+                            <li>Systems programming</li>
+                            <li>Gameplay programming</li>
+                        </ul>
+                    </div>
+        
+                </div>
+                
+            </div>
+    
+            <div id="game-engines" class="sectionContainer">
+                <h2 class="contentTitle">Engines</h1>
+                <div id="engines-container">
+                    <div class="engine-slot unity">
+                        <div class="text">
+                            <h3 class="project-name">Unity</h3>
+                            <p>Unity is a game engine</p>
+                            <a class="button" href="https://unity.com/es" target="_blank">Know More!</a>
+                        </div>
+                    </div>
+        
+                    <div class="engine-slot unreal">
+                        <div class="text">
+                            <h3 class="project-name">Unreal Engine</h3>
+                            <p>Unreal is a game engine</p>
+                            <a class="button" href="https://www.unrealengine.com/es-ES" target="_blank">Know More!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="game-projects" class="sectionContainer">
+                <h2 class="contentTitle">Projects</h1>
+                <div id="projects-container">
+                    <div class="project-slot" style="--bg-image: url('../Resources/Imgs/mucus.png');">
+                        <div class="text">
+                            <h3 class="project-name">Mucus Goals</h3>
+                            <p>Take control of your enemies to overcome the challenge!</p>
+                            <a class="button" href="https://4boolgames.itch.io/mucus-goals" target="_blank">Know More!</a>
+                        </div>
+                    </div>
+    
+                    <div class="project-slot active" style="--bg-image: url('../Resources/Imgs/furballer.jpg');">
+                        <div class="text">
+                            <h3 class="project-name">Furballer</h3>
+                            <p>Destroy as many puppets as you can in the given time!</p>
+                            <a class="button" href="https://store.steampowered.com/app/2730090/Furballer/?l=spanish" target="_blank">Know More!</a>
+                        </div>
+                    </div>
+    
+                    <div class="project-slot" style="--bg-image: url('../Resources/Imgs/clown.png');">
+                        <div class="text">
+                            <h3 class="project-name">Clown Climbing</h3>
+                            <p>Use your skills and optimize your stamina to reach the Endgame!</p>
+                            <a class="button" href="https://borchgamedev.itch.io/clown-climbing" target="_blank">Know More!</a>
+                        </div>
+                    </div>
+        
+                </div>
+                <button id="prevBtn"><img src="../Resources/Imgs/left_arrow.png"></button>
+                <button id="nextBtn"><img src="../Resources/Imgs/right_arrow.png"></button>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <div id="web-container">
+            <h1 class="sectionTitle">WEB</h1>
+            <div id="web-knowledge">
+                <h2 class="contentTitle"> Frameworks & languages</h2>
+                <div id="web-knowledge-container">
+                    <img src="../Resources/Imgs/right_arrow.png" alt="" id="next-framework-arrow">
+                    <div class="knowledge-slot" style="--bg-image: url('../Resources/Imgs/html5_bg.jpg'); --bg-color:orange">
+                        <section class="knowledge-info">
+                            <h1>HTML 5</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <a href="https://www.w3schools.com/html/" target="_blank"><button>Know more</button></a>
+                        </section>
+                        <a class="slot-mainImage"><img src="../Resources/Imgs/html5.svg" alt=""></a>
+                    </div>
+
+                    <div class="knowledge-slot" style="--bg-image: url('../Resources/Imgs/css3_bg.jpg'); --bg-color:blue">
+                        <section class="knowledge-info">
+                            <h1>CSS 3</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <a href="https://www.w3schools.com/css/" target="_blank"><button>Know more</button></a>
+                        </section>
+                        <a class="slot-mainImage"><img src="../Resources/Imgs/css.svg" alt=""></a>
+                    </div>
+
+                    <div class="knowledge-slot" style="--bg-image: url('../Resources/Imgs/html5_bg.jpg'); --bg-color:yellow">
+                        <section class="knowledge-info">
+                            <h1>JavaScript</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <a href="https://www.w3schools.com/js/" target="_blank"><button>Know more</button></a>
+                        </section>
+                        <a class="slot-mainImage"><img src="../Resources/Imgs/javascript.svg" alt=""></a>
+                    </div>
+
+                    <div class="knowledge-slot" style="--bg-image: url('../Resources/Imgs/html5_bg.jpg'); --bg-color:lightblue">
+                        <section class="knowledge-info">
+                            <h1>REACT</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <a href="https://www.w3schools.com/REACT/DEFAULT.ASP" target="_blank"><button>Know more</button></a>
+                        </section>
+                        <a class="slot-mainImage"><img src="../Resources/Imgs/react.svg" alt=""></a>
+                    </div>
+
+                    <div class="knowledge-slot" #web-projects-container --bg-color:purple">
+                        <section class="knowledge-info">
+                            <h1>BOOTSTRAP</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <a href="https://www.w3schools.com/bootstrap5/index.php" target="_blank"><button>Know more</button></a>
+                        </section>
+                        <a class="slot-mainImage"><img src="../Resources/Imgs/bootstrap.svg" alt=""></a>
+                    </div>
+
+                    <div class="knowledge-slot" style="--bg-image: url('../Resources/Imgs/html5_bg.jpg'); --bg-color:white">
+                        <section class="knowledge-info">
+                            <h1>PHP</h1>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <a href="https://www.w3schools.com/php/default.asp" target="_blank"><button>Know more</button></a>
+                        </section>
+                        <a class="slot-mainImage"><img src="../Resources/Imgs/php.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="web-projects">
+                    <h2 class="contentTitle">Projects</h2>
+                    <p style="font-size: 200%;">Yet in development</p>
+                    <!--
+                    <div id="web-projects-container">
+                        <div class="web-project-slot">
+                            <h2>Project name</h2>
+                            <section class="acquired-skills">
+                                <h3>Acquired skills: </h3>
+                                <section>
+                                    <p>-Skill 1</p>
+                                    <p>-Skill 2</p>
+                                    <p>-Skill 3</p>
+                                </section>
+                            </section>
+                            <button class="web-project-selector" style="cursor: pointer;">See for yourself!</button>
+                        </div>
+                        <div class="web-project-slot">
+                            <h2>Project name</h2>
+                            <section class="acquired-skills">
+                                <h3>Acquired skills: </h3>
+                                <section>
+                                    <p>-Skill 1</p>
+                                    <p>-Skill 2</p>
+                                    <p>-Skill 3</p>
+                                </section>
+                            </section>
+                            <button class="web-project-selector" style="cursor: pointer;">See for yourself!</button>
+                        </div>
+                        <div class="web-project-slot">
+                            <h2>Project name</h2>
+                            <section class="acquired-skills">
+                                <h3>Acquired skills: </h3>
+                                <section>
+                                    <p>-Skill 1</p>
+                                    <p>-Skill 2</p>
+                                    <p>-Skill 3</p>
+                                </section>
+                            </section>
+                            <button class="web-project-selector" style="cursor: pointer;">See for yourself!</button>
+                        </div>
+                        
+                    </div>
+                    
+                    -->
+                    
+            </div>
+            
+
+            
+            
+        </div>
+
+        
+    </main>
+    <footer id="footer">
+        <div id="footer-container">
+            <p id="footer-copyright">&copy; BorchDev, 2024</p>
+
+            <div id="footer-links">
+                <a href="https://github.com/borjita22/Borja-Garcia-Dev/tree/3688d73ae99bbfd3fbfbcc217e9489b93da5d4f9/projects" target="_blank"> <i class="fa">&#xf09b;</i> </a>
+                <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAAD0rxMgBkkPGvzqttebpZrna3rDyX7D8bJY&keywords=borja%20garcía&origin=RICH_QUERY_SUGGESTION&position=0&searchId=6a2412ec-2a4b-47d2-a416-bada42c6f3de&sid=UH-&spellCorrectionEnabled=false" target="_blank"> <i class="fa">&#xf08c;</i> </a>
+            </div>
+           
+        </div>
+        
+    </footer>
+
+    <script src="../JavaScript/index.js"></script>
+    <script src="../JavaScript/games.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,178 @@
+#contact-form-container h1, p
+{
+    margin: 20px;
+}
+
+#contact-form-container
+{
+    margin-top: 50px;
+    width: 100%;
+}
+
+#contact-form
+{
+    width: 50%;
+    height: auto;
+    background-color: #3da06a;
+    box-shadow: rgba(50, 50, 93, 0.45) 0px 13px 27px -5px, rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    margin: 50px 25%;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+#contact-form div
+{
+    margin: 20px;
+}
+
+#contact-form div label
+{
+    margin-right: 20px;
+}
+
+#message
+{
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    border: 2px solid black;
+    font-size: 20px;
+    resize: none;
+}
+
+.form-group
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-form button
+{
+    float: right;
+    width: 150px;
+    height: auto;
+    font-size: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+}
+
+#contact-form input
+{
+    border: 2px solid black;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#subject
+{
+    margin-left: 12px;
+}
+
+#sender
+{
+    margin-left: 25px;
+}
+
+
+#contact-form button:hover
+{
+    background-color: cadetblue;
+}
+
+.custom-danger {
+    color: red; /* Cambia el color del texto */
+    background-color: #f8d7da; /* Fondo suave para el mensaje de error */
+    border: 1px solid red; /* Borde para resaltar el mensaje */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espacio debajo del mensaje */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 200%;
+}
+
+.custom-success {
+    color: white; /* Cambia el color del texto */
+    background-color: #28a745; /* Fondo suave para el mensaje de éxito */
+    border: 1px solid #28a745; /* Borde para resaltar el mensaje */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espacio debajo del mensaje */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 200%;
+}
+
+
+
+@media (max-width: 600px)
+{
+    #contact-form-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #contact-form
+    {
+        flex-direction: column;
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    #contact-form div
+    {
+        flex-direction: column;
+
+    }
+
+    .message
+    {
+        margin: 0 !important;
+    }
+
+    #message
+    {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    #email
+    {
+        max-width: 350px;
+        font-size: 12px;
+    }
+
+    #sender
+    {
+        margin: 0 !important;
+    }
+
+    #contact-form div label
+    {
+        margin-bottom: 20px;
+    }
+
+    #email
+    {
+        margin: 0;
+    }
+
+    #subject
+    {
+        margin: 0;
+    }
+
+    #contact-form button
+    {
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+
+
+}
+
+
+

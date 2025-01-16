@@ -1,0 +1,433 @@
+
+
+
+#aboutme-main-container
+{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    box-sizing: border-box;
+
+    min-height: 500px;
+
+    
+}
+
+#aboutme-main-container::after
+{
+    background-image: url('../Resources/Imgs/earth.jpeg');
+    background-attachment: fixed;
+    background-position: top center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Transición suavizada */
+    pointer-events: none;
+}
+
+#aboutme-main-container h1
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#aboutme-info-container
+{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+#aboutme-info-container img
+{
+    width: 500px;
+    height: auto;
+}
+
+.info-container-element
+{
+    float: left;
+    margin: 20px;
+    
+}
+
+.no-bold
+{
+    font-weight: normal;
+}
+
+#aboutme-main-image
+{
+    border-radius: 10px;
+    
+}
+
+
+.section-separator
+{
+    width: 20%;
+    color: lightgray;
+}
+
+#aboutme-hard-main-container
+{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#aboutme-hard-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#aboutme-hard-info-container div {
+    width: 25%;
+    height: 300px; /* Altura ajustada para la forma circular */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top center; /* Centra el contenido en la forma circular */
+    margin: 10px;
+    border-radius: 50%;
+    transition: all 0.5s ease; /* Transición para todos los cambios */
+    overflow: hidden;
+    text-align: center;
+}
+
+#aboutme-hard-info-container div h2 {
+    margin: 50%;
+    z-index: 2; /* Asegura que el título esté por encima */
+    font-size: 50px;
+    transition: font-size 0.5s ease;
+    transition: margin 0.5s ease;
+}
+
+#aboutme-hard-info-container div p {
+    opacity: 0; /* Oculta el contenido de párrafos inicialmente */
+    transition: opacity 0.5s ease;
+}
+
+#games-hard {
+    background-color: lightgray;
+    box-shadow: 5px 10px 18px #888888;
+
+}
+
+
+#games-hard:hover {
+    width: 45%;
+    height: 400px; /* Altura aumentada para la forma rectangular */
+    border-radius: 10px; /* Forma rectangular en hover */
+    background-image: url('../Resources/Imgs/videogameDesing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply; /* Mezcla la imagen con el color */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#games-hard:hover h2
+{
+    color: lightgray;
+}
+
+#games-hard:hover p {
+    opacity: 1; /* Muestra el contenido de los párrafos en hover */
+}
+
+#games-hard p
+{
+    color: lightgray;
+}
+
+#aboutme-hard-info-container div:hover
+{
+    align-items: center;
+    justify-content: top center;
+}
+
+#aboutme-hard-info-container div:hover h2
+{
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+
+#web-hard
+{
+    float: right;
+    background-color: lightgray;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+#web-hard p
+{
+    color: lightgray;
+}
+
+#web-hard:hover {
+    width: 45%;
+    height: 400px; /* Altura aumentada para la forma rectangular */
+    border-radius: 10px; /* Forma rectangular en hover */
+
+    background-image: url('../Resources/Imgs/webDev.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply; /* Mezcla la imagen con el color */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#web-hard:hover h2
+{
+    color: lightgray;
+}
+
+#web-hard:hover p {
+    opacity: 1; /* Muestra el contenido de los párrafos en hover */
+}
+
+.soft-skill
+{
+    background-color: rgba(128, 128, 128, 0.26);
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.soft-skill:hover
+{
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.soft-skill h2
+{
+    margin: 130px;
+    transition: margin 0.5s ease;
+}
+
+.soft-skill:hover h2
+{
+    margin: 10px;
+}
+
+.soft-skill p
+{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.soft-skill:hover p
+{
+    opacity: 1;
+}
+
+#aboutme-soft-main-container
+{
+    margin: 0;
+}
+
+#aboutme-soft-info-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#aboutme-soft-info-container div
+{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.75s ease;
+    margin: 0 20px;
+    
+}
+
+#aboutme-soft-info-container div:hover
+{
+    width: 30%;
+    height: auto;
+}
+
+
+
+#aboutme-experience-info-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+
+.experience-slot
+{
+    width: 30%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.734);
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.experience-slot:hover
+{
+    box-shadow: rgba(50, 50, 93, 0.45) 0px 13px 27px -5px, rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+    transform: scale(130%);
+}
+
+#curriculum-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    clear: both;
+}
+
+#cv-document
+{
+    display: none;
+}
+
+#showCVbtn
+{
+    margin: 10px auto;
+    border: none;
+    background: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+#showCVbtn:hover
+{
+    transform: scale(1.25);
+    text-decoration: underline;
+}
+
+#pdf-download
+{
+    text-decoration: none;
+    color: black;
+
+    transition: transform 0.5s ease;
+}
+
+#pdf-download:hover
+{
+    text-decoration: underline;
+    transform: scale(1.25);
+}
+
+
+@media (max-width: 600px)
+{
+    #aboutme-main-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+    #aboutme-info-container
+    {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    #aboutme-info-container img
+    {
+        width: 80%;
+        height: auto;
+    }
+
+    .info-container-element
+    {
+        display: block;
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+
+    .info-container-element img
+    {
+        width: 100%;
+    }
+
+    #aboutme-hard-info-container
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        align-items: center;
+        
+    }
+
+    #aboutme-hard-info-container div
+    {
+        width: 100%;
+    }
+
+    #aboutme-hard-info-container div:hover
+    {
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #aboutme-soft-info-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #aboutme-soft-info-container div
+    {
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    #aboutme-soft-info-container div:hover
+    {
+        width: 80%;
+    }
+
+    #aboutme-experience-info-container
+    {
+        flex-direction: column;
+    }
+
+    .experience-slot
+    {
+        text-align: center;
+        margin-bottom: 10px;
+        width: 70%;
+    }
+
+    #cv-document
+    {
+        width: 90%;
+        height: 500px;
+    }
+
+}
